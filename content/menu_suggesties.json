@@ -1,0 +1,125 @@
+{
+  "items": [
+    {
+      "name": "🧀 Extra Burrata",
+      "desc_nl": "Voeg burrata toe aan elk recept (behalve visgerechten) voor extra romigheid",
+      "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess",
+      "price": 6,
+      "kv": ""
+    },
+    {
+      "name": "🥦 Broccoli (Linguine)",
+      "desc_nl": "Linguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
+      "desc_en": "Linguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper",
+      "price": 16,
+      "kv": "",
+      "sold_out": false
+    },
+    {
+      "name": "🎃 Gnocchi met Pompoen",
+      "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, parmezaanschilfers",
+      "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, Parmesan shavings",
+      "price": "16.00",
+      "kv": ""
+    },
+    {
+      "name": "🍅 Gnocchi alla Sorrentina",
+      "desc_nl": "Olijfolie, verse tomaten, ajuin, look, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basilicum, zwarte peper",
+      "desc_en": "Olive oil, fresh tomatoes, onion, garlic, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basil, black pepper",
+      "price": "16.00",
+      "kv": ""
+    },
+    {
+      "name": "🍅 Burrata \"Nieuwkomer\"",
+      "desc_nl": "Tomaten (geel of rood afhankelijk van seizoen), burrata, sjalot, extra vierge olijfolie, chilipeper, verse basilicum, zout",
+      "desc_en": "Tomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt",
+      "price": "16.00",
+      "kv": ""
+    },
+    {
+      "name": "🍄 Shiitake Linguine",
+      "desc_nl": "Shiitake, look, boter, zwarte peper, Parmezaan kaas",
+      "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
+      "price": "17.00",
+      "kv": ""
+    },
+    {
+      "name": "🧅 Genovese",
+      "desc_nl": "Traditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
+      "desc_en": "Traditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan",
+      "price": "17.00",
+      "kv": ""
+    },
+    {
+      "name": "🥓 Shiitake met Spek Alto Adige IGP",
+      "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
+      "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
+      "price": "17.00",
+      "kv": ""
+    },
+    {
+      "name": "🧀 Shiitake 4 Kazen",
+      "desc_nl": "Shiitake, look, mascarpone, taleggio, gorgonzola, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
+      "desc_en": "Shiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
+      "price": "17.50",
+      "kv": ""
+    },
+    {
+      "name": "🎃 Burrata & Speck Alto Adige met Pompoencème",
+      "desc_nl": "Pompoen, room, krokante reepjes Speck Alto Adige, extra vergine olijfolie, sjalot, burrata, zout, peper",
+      "desc_en": "Pumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper",
+      "price": "17.50",
+      "kv": ""
+    },
+    {
+      "name": "🦑 Spaghetti Rode Duivels",
+      "desc_nl": "Spaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, burrata-crème, extra vierge olijfolie, verse basilicum",
+      "desc_en": "Squid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, burrata cream, extra virgin olive oil, fresh basil",
+      "price": "18.00",
+      "kv": ""
+    },
+    {
+      "name": "🍤 Nero Seppia Scampi",
+      "desc_nl": "Spaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, extra vierge olijfolie, verse basilicum",
+      "desc_en": "Squid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, extra virgin olive oil, fresh basil",
+      "price": 19,
+      "kv": ""
+    },
+    {
+      "name": "🐙 Nero Seppia Octopus",
+      "desc_nl": "Spaghetti al nero di seppia, kleine inktvisjes, kerstomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper, geroosterd broodkruim",
+      "desc_en": "Squid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs",
+      "price": "19.00",
+      "kv": ""
+    },
+    {
+      "name": "🐚 Linguine con Vongole",
+      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
+      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
+      "price": 20,
+      "kv": "",
+      "sold_out": true
+    },
+    {
+      "name": "🐟 Shiitake al Salmone",
+      "desc_nl": "Shiitake, olijfolie, look, zalm, platte peterselie, room, zwarte peper",
+      "desc_en": "Shiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper",
+      "price": "20.00",
+      "kv": ""
+    },
+    {
+      "name": "🍤 Scampi Shiitake",
+      "desc_nl": "Scampi, look, olijfolie, shiitake, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas",
+      "desc_en": "King prawns, garlic, olive oil, shiitake, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
+      "price": "20.00",
+      "kv": ""
+    },
+    {
+      "price": 18,
+      "sold_out": false,
+      "name": "🍤SCAMPI MET LINGUINE",
+      "desc_nl": "Kers tomaten,look, peterselie,scampi's,zwarte peper",
+      "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
+    }
+  ]
+}

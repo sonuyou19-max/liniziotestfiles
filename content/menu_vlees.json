@@ -1,0 +1,185 @@
+{
+  "items": [
+    {
+      "name": "🥩 Panna e Prosciutto",
+      "desc_nl": "Gekookte hesp, verse room, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cooked ham, fresh cream, PARMIGIANO REGGIANO D.O.P",
+      "price": "16.00",
+      "kv": ""
+    },
+    {
+      "name": "🥩 Amatriciana",
+      "desc_nl": "Tomatensaus, ajuin, spek, verse tomaten, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, onion, bacon, fresh tomatoes, basil, PARMIGIANO REGGIANO D.O.P",
+      "price": "16.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Bolognese",
+      "desc_nl": "Tomatensaus, gehakt rundsvlees, gehakt varkensvlees, selder, wortels, ajuin, muskaatnoot, peper, boter, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, minced beef, minced pork, celery, carrots, onion, nutmeg, pepper, butter, PARMIGIANO REGGIANO D.O.P",
+      "price": "16.00",
+      "kv": "KV €23,00🥡🥡 medium bekers ",
+      "sold_out": false
+    },
+    {
+      "name": "🥩 Arrabbiata con Salame",
+      "desc_nl": "Kerstomatensaus, look, pikante salami, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cherry tomato sauce, garlic, spicy salami, chilli, basil, PARMIGIANO REGGIANO D.O.P",
+      "price": 17,
+      "kv": ""
+    },
+    {
+      "name": "🥩 Carbonara con Pomodoro",
+      "desc_nl": "Tomatensaus, spek, ajuin, gepasteuriseerd eieren, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, zwarte peper",
+      "desc_en": "Tomato sauce, bacon, onion, pasteurised eggs, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, black pepper",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Panna, Prosciutto e Funghi",
+      "desc_nl": "Gekookte hesp, verse room, champignons, peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
+      "desc_en": "Cooked ham, fresh cream, mushrooms, parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
+      "price": "17.00",
+      "kv": ""
+    },
+    {
+      "name": "🥩 Carbonara all'Italiana",
+      "desc_nl": "Spek, ajuin, gepasteuriseerd eieren, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, zwarte peper",
+      "desc_en": "Bacon, onion, pasteurised eggs, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, black pepper",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Diavola",
+      "desc_nl": "Tomatensaus, verse room, champignons, spek, pilipili, peterselie, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, fresh cream, mushrooms, bacon, chilli, parsley, PARMIGIANO REGGIANO D.O.P",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Chef",
+      "desc_nl": "Tomatensaus, look, ajuin, spek, broccoli, verse tomaten, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, garlic, onion, bacon, broccoli, fresh tomatoes, basil, PARMIGIANO REGGIANO D.O.P",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Paesana",
+      "desc_nl": "Verse room, kerstomatensaus, gekookte hesp, champignons, look, peterselie, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Fresh cream, cherry tomato sauce, cooked ham, mushrooms, garlic, parsley, PARMIGIANO REGGIANO D.O.P",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Inizio",
+      "desc_nl": "Bolognese, verse room, zwarte peper, muskaatnoot, ajuin in witte wijn, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Bolognese, fresh cream, black pepper, nutmeg, onion in white wine, PARMIGIANO REGGIANO D.O.P",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 American Bar",
+      "desc_nl": "Tomatensaus, spek, ajuin, gepasteuriseerd eieren, verse room, peterselie, zwarte peper, pesto, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, bacon, onion, pasteurised eggs, fresh cream, parsley, black pepper, pesto, PARMIGIANO REGGIANO D.O.P",
+      "price": "18.00",
+      "kv": "KV €24,00 🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Italian Bar",
+      "desc_nl": "Spek, ajuin, gepasteuriseerd eieren, verse room, peterselie, zwarte peper, pesto, parmezaanschilfers, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Bacon, onion, pasteurised eggs, fresh cream, parsley, black pepper, pesto, Parmesan shavings, PARMIGIANO REGGIANO D.O.P",
+      "price": "18.00",
+      "kv": "KV €24,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🥩 Origineel Carbonara",
+      "desc_nl": "Guanciale, gepasteuriseerd eieren, Pecorino",
+      "desc_en": "Guanciale, pasteurised eggs, Pecorino",
+      "price": "18.00",
+      "kv": ""
+    },
+    {
+      "name": "🥩 Origineel Amatriciana",
+      "desc_nl": "Guanciale, kerstomaatjes, tomatensaus, een snuifje peper, Pecorino kaas",
+      "desc_en": "Guanciale, cherry tomatoes, tomato sauce, a pinch of pepper, Pecorino cheese",
+      "price": "18.00",
+      "kv": ""
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩 ALLE ZUCCHINE E RICOTTA",
+      "desc_nl": "Tomatensaus, courgettes, ajuin, spek, witte wijn, ricottakaas, verse room, peterselie, zwarte peper, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, zucchini, onion, bacon, white wine, ricotta cheese, fresh cream, parsley, black pepper, PARMIGIANO REGGIANO D.O.P",
+      "kv": "KV €23,00🥡🥡 medium bekers"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩BROCCOLI AL GORGONZOLA  ",
+      "desc_nl": "Verse room, spek, look, broccoli, gorgonzola, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Fresh cream, bacon, garlic, broccoli, gorgonzola, PARMIGIANO REGGIANO D.O.P",
+      "kv": "KV €23,00🥡🥡 medium bekers"
+    },
+    {
+      "price": 17.5,
+      "sold_out": false,
+      "name": "🥩BROCCOLI BOLOGNESE ",
+      "desc_nl": "\nTomatensaus, verse room, broccoli, bolognese, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, fresh cream, broccoli, bolognese, PARMIGIANO REGGIANO D.O.P",
+      "kv": "KV €24,00 🥡🥡 medium bekers"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩POMPOEN MET SPEK ALTO ADIGE “MET ROOM” ",
+      "desc_nl": "Pompoen, “spek dell'Alto Adige NIET Geroosterd “pilipili, look, verse room, peterselie, PARMIGIANO REGGIANO D.O.P ,parmezaanschilfers",
+      "desc_en": "Pumpkin, “speck dell'Alto Adige NOT Roasted” pilipili, garlic, fresh cream, parsley, PARMIGIANO REGGIANO D.O.P, parmesan flakes",
+      "kv": "KV €24,00 🥡🥡 medium bekers"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩ALLA VODKA",
+      "desc_nl": "Olijfolie,ajuin,”vlees pancetta”,tomaten saus,room,platte peterselie ,zwarte peper, PARMIGIANO REGGIANO D.O.P,VODKA.\n",
+      "desc_en": "Olive oil, onion, meat pancetta, tomato sauce, cream, flat parsley, black pepper, PARMIGIANO REGGIANO D.O.P, VODKA."
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩POMPOEN MET SPEK ”met LINGUINE “",
+      "desc_nl": "POMPOEN MET SPEK “ZONDER ROOM”NIET Geroosterd spek 🥓 Alto Adige I.G.P\nPompoen, spek dell'Alto Adige, pilipili, look, PARMIGIANO REGGIANO D.O.P, peterselie, parmezaanschilfers",
+      "desc_en": "PUMPKIN WITH BACON “WITHOUT CREAM”NOT Roasted bacon 🥓 Alto Adige I.G.P\nPumpkin, bacon dell'Alto Adige, pilipili, garlic, PARMIGIANO REGGIANO D.O.P, parsley, parmesan flakes"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩CASA “STOOFVLEES RAGÙ OP NAPOLITAANSE WIJZE ",
+      "desc_nl": "Tomatensaus, stoofvlees met 'ragu saus op napolitaanse wijze', ajuin, ricotta, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, stew with 'ragu sauce in Neapolitan style', onion, ricotta, basil, PARMIGIANO REGGIANO D.O.P",
+      "kv": "KV €24,00 🥡🥡 medium bekers"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩PANNA,PROSCIUTTO,BROCCOLI & GORGONZOLA ",
+      "desc_nl": "Gekookte hesp, verse room, broccoli, look & gorgonzola, zwarte peper, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cooked hesp, fresh cream, broccoli, garlic & gorgonzola, black pepper, PARMIGIANO REGGIANO D.O.P"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩CASA “STOOFVLEES RAGÙ OP NAPOLITAANSE WIJZE MET “GNOCCHI “",
+      "desc_nl": "Tomatensaus, stoofvlees met 'ragu saus op napolitaanse wijze', ajuin, ricotta, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, stew with 'ragu sauce in Neapolitan style', onion, ricotta, basil, PARMIGIANO REGGIANO D.O.P"
+    },
+    {
+      "price": 18,
+      "sold_out": false,
+      "name": "🥩PASTA E PATATE ALLA NAPOLETANA ☝️” MET PASTA MISTA” Zoals in Italië ",
+      "desc_nl": "Olijfolie, knoflook, ui, wortelen, selderij, tomaat, aardappelen, pancetta,Parmezaanse kaas, scamorzakaas, rozemarijn, peper, peterselie",
+      "desc_en": "Olive oil, garlic, onion, carrots, celery, tomato, potatoes, bacon, Parmesan cheese, scamorza cheese, rosemary, pepper, parsley \n"
+    }
+  ]
+}

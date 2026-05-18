@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "name_nl": "Extra vork",
+      "name_en": "Extra fork",
+      "price": "0.10"
+    },
+    {
+      "name_nl": "Draagtas",
+      "name_en": "Carry bag",
+      "price": "0.50"
+    },
+    {
+      "name_nl": "Extra beker",
+      "name_en": "Extra bowl",
+      "price": "1.00"
+    },
+    {
+      "name_nl": "Parmezaan",
+      "name_en": "Parmesan",
+      "price": "2.00"
+    },
+    {
+      "name_nl": "Glutenvrij",
+      "name_en": "Gluten-free pasta",
+      "price": 2
+    },
+    {
+      "name_nl": "Parmezaanschilfers",
+      "name_en": "Parmesan shavings",
+      "price": "2.50"
+    },
+    {
+      "name_nl": "Spek Alto Adige",
+      "name_en": "Alto Adige bacon",
+      "price": "5.00"
+    },
+    {
+      "name_nl": "Burrata",
+      "name_en": "Burrata",
+      "price": "6.00"
+    }
+  ]
+}
