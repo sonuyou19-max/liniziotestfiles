@@ -2380,7 +2380,7 @@ body.cart-open {
         <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">🐟 Shiitake al Salmone</div><div class="menu-item-desc" data-tx="s015">Shiitake, olijfolie, look, zalm, platte peterselie, room, zwarte peper</div></div><div class="menu-item-price">€20,00</div><button class="add-to-cart" onclick="addToCart(this,'🐟 Shiitake al Salmone',20.00)" aria-label="Toevoegen">+</button></div>
         <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">🍤 Scampi Shiitake</div><div class="menu-item-desc" data-tx="s016">Scampi, look, olijfolie, shiitake, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas</div></div><div class="menu-item-price">€20,00</div><button class="add-to-cart" onclick="addToCart(this,'🍤 Scampi Shiitake',20.00)" aria-label="Toevoegen">+</button></div>
       </div>
-      <div class="menu-note" id="menu-note-sug-el" data-tx="menu-note-sug">⭐ Suggesties wisselen regelmatig. Vraag naar de weekspecial!</div>
+      <div class="menu-note" id="menu-note-sug-el">⭐ Suggesties wisselen regelmatig. Vraag naar de weekspecial!</div>
     </div>
 
     <!-- VEGETARISCH -->
@@ -3063,7 +3063,7 @@ const TRANSLATIONS = {
     'footer-hours4': 'Feestdagen: Gesloten',
 
     'section-title-menu': 'Wat smaakt vandaag?',
-    'menu-note-sug': '⭐ Suggesties wisselen regelmatig. Vraag naar de weekspecial!',
+    'menu-note-sug': '',  /* Managed by CMS - do not hardcode */
     'notice-title': 'Breaking News uit de Keuken',
     'notice-text': 'De chef rookt <strong>NIET</strong>\u2026 en rook staat niet op het menu! \uD83D\uDE04 Om de kwaliteit, hygi\u00EBne en de heerlijke pastageur te behouden, vragen we vriendelijk <strong>niet voor het raam te roken</strong>, noch aan de linker- of rechterkant. \uD83D\uDC49 Let op de wind: hij heeft geen genade\u2026 en blaast alles naar binnen! Bedankt voor het respect en om ons in schone lucht te laten koken! \uD83D\uDE4F\uD83C\uDF5D',
     'addon-badge': '+ Toevoeging',
@@ -3332,7 +3332,7 @@ const TRANSLATIONS = {
     'section-title-menu': 'What\'s on today?',
 
     /* ── MENU NOTES ── */
-    'menu-note-sug': '⭐ Suggestions change regularly. Ask about the weekly special!',
+    'menu-note-sug': '',  /* Managed by CMS - do not hardcode */
     'notice-title': 'Breaking News from the Kitchen',
     'notice-text': 'The chef does <strong>NOT</strong> smoke\u2026 and smoke is not on the menu! \uD83D\uDE04 To keep the quality, hygiene, and the aroma of the pasta at its best, we kindly ask you <strong>not to smoke in front of the window</strong>, nor on the left or right side. \uD83D\uDC49 Watch the wind: it has no mercy\u2026 and brings everything inside! Thank you for the respect and for helping us cook in clean air! \uD83D\uDE4F\uD83C\uDF5D',
     'addon-badge': '+ Add-on',
@@ -3683,9 +3683,7 @@ function setLang(lang) {
     }
   }
 
-  /* ── MENU NOTES ── */
-  tx('[data-tx="menu-note-sug"]', 'menu-note-sug');
-  // Update suggesties note from CMS data
+  /* ── MENU NOTES — always use CMS data, never hardcoded translations ── */
   var noteEl2 = document.getElementById('menu-note-sug-el');
   if (noteEl2 && window._suggestiesData) {
     var noteText2 = lang === 'en' ? (window._suggestiesData.note_en || '') : (window._suggestiesData.note_nl || '');
