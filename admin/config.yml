@@ -28,6 +28,8 @@ collections:
         file: "content/hours.json"
         format: json
         fields:
+          - { label: "⚠️ Speciale mededeling NL (laat leeg als geen melding)", name: "special_notice_nl", widget: "string", required: false, hint: "Bijv: Vrijdag 11/05: gesloten middag. Vanavond open vanaf 18:00." }
+          - { label: "⚠️ Special notice EN (leave empty if no notice)", name: "special_notice_en", widget: "string", required: false, hint: "E.g: Friday 11/05: closed at lunch. Open again this evening from 18:00." }
           - { label: "Middag (NL)", name: "middag_nl", widget: "string", default: "Ma–Vr: 12:00–13:15" }
           - { label: "Middag (EN)", name: "middag_en", widget: "string", default: "Mon–Fri: 12:00–13:15" }
           - { label: "Avond (NL)", name: "avond_nl", widget: "string", default: "Ma–Vr: 18:00–20:45" }
@@ -43,6 +45,8 @@ collections:
         file: "content/menu_suggesties.json"
         format: json
         fields:
+          - { label: "📝 Notitie NL (onderaan tab, laat leeg om te verbergen)", name: "note_nl", widget: "string", required: false, hint: "Bijv: Suggesties wisselen regelmatig. Vraag naar de weekspecial!" }
+          - { label: "📝 Note EN (bottom of tab, leave empty to hide)", name: "note_en", widget: "string", required: false, hint: "E.g: Suggestions change regularly. Ask about the weekly special!" }
           - label: "Gerechten / Dishes"
             name: "items"
             widget: "list"
