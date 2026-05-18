@@ -1,12 +1,12 @@
 {
   "weekend_en": "Sat, Sun: Closed",
   "middag_en": "Mon–Fri: 12:00–13:15",
-  "special_notice_en": "Closed due to bank Holiday.",
+  "special_notice_en": "",
   "avond_nl": "Ma–Vr: 18:00–20:45",
   "feestdagen_nl": "Feestdagen: Gesloten",
   "weekend_nl": "Zat, Zon: Gesloten ",
   "avond_en": "Mon–Fri: 18:00–20:45",
   "middag_nl": "Ma–Vr: 12:00–13:15 ",
   "feestdagen_en": "Public holidays: Closed",
-  "special_notice_nl": "Gesloten vanwege een feestdag."
+  "special_notice_nl": ""
 }
