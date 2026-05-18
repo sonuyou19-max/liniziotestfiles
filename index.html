@@ -2277,8 +2277,8 @@ body.cart-open {
       <span class="info-icon">🕐</span>
       <div>
         <div class="info-label" data-tx="info-hours-label">Openingsuren</div>
+        <div id="info-strip-notice" style="display:none;margin-bottom:2px;font-size:0.78rem;color:var(--terracotta);font-family:'Josefin Sans',sans-serif;font-weight:700;letter-spacing:0.02em;"><span id="info-strip-notice-text"></span></div>
         <div class="info-value" data-tx="info-hours-val">Ma–Vr: 12:00–13:15 &amp; 18:00–20:45<br>Za, Zo &amp; feestdagen: gesloten</div>
-        <div id="info-strip-notice" style="display:none;margin-top:4px;font-size:0.78rem;color:var(--terracotta);font-family:'Josefin Sans',sans-serif;font-weight:600;letter-spacing:0.03em;"><span id="info-strip-notice-text"></span></div>
       </div>
     </div>
     <div class="info-item">
@@ -4312,20 +4312,30 @@ if (window.netlifyIdentity) {
     }
     window._hoursData = d;
 
-    /* Special notice banner */
-    var noticeBar = document.getElementById('special-notice-bar');
-    var noticeText = document.getElementById('special-notice-text');
-    if (noticeBar && noticeText) {
-      var notice = (typeof currentLang !== 'undefined' && currentLang === 'en')
-        ? (d.special_notice_en || '')
-        : (d.special_notice_nl || '');
-      if (notice && notice.trim() !== '') {
-        noticeText.textContent = notice;
-        noticeBar.style.display = 'block';
-      } else {
-        noticeBar.style.display = 'none';
+    /* applySpecialNotice — updates info strip + hours banner */
+    window._applySpecialNotice = function(lang) {
+      var activeLang = lang || (typeof currentLang !== 'undefined' ? currentLang : 'nl');
+      var isEN = (activeLang === 'en');
+      var notice = isEN ? (d.special_notice_en || '') : (d.special_notice_nl || '');
+      var hasNotice = (notice && notice.trim() !== '');
+
+      var stripEl   = document.getElementById('info-strip-notice');
+      var stripText = document.getElementById('info-strip-notice-text');
+      if (stripEl && stripText) {
+        stripText.textContent = hasNotice ? ('⚠ ' + notice) : '';
+        stripEl.style.display = hasNotice ? 'block' : 'none';
       }
-    }
+
+      var bannerEl   = document.getElementById('special-notice-bar');
+      var bannerText = document.getElementById('special-notice-text');
+      if (bannerEl && bannerText) {
+        bannerText.textContent = hasNotice ? notice : '';
+        bannerEl.style.display = hasNotice ? 'block' : 'none';
+      }
+    };
+    window._applySpecialNotice(
+      (typeof currentLang !== 'undefined' && currentLang) ? currentLang : 'nl'
+    );
 
     /* patch TRANSLATIONS for EN switching */
     if (typeof TRANSLATIONS !== 'undefined') {
