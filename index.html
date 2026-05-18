@@ -631,16 +631,22 @@ nav.dark .hamburger span { background: var(--cream); }
 .menu-item {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   padding: 1rem 0;
+  padding-right: 44px;
   border-bottom: 1px solid rgba(28,18,8,0.07);
-  gap: 1rem;
+  gap: 0.8rem;
   transition: padding-left 0.15s;
 }
 
 .menu-item:active { padding-left: 0.4rem; }
 
 .menu-item-info { flex: 1; }
+
+.menu-item-info {
+  flex: 1;
+  min-width: 0;
+}
 
 .menu-item-name {
   font-family: 'Playfair Display', serif;
@@ -663,16 +669,23 @@ nav.dark .hamburger span { background: var(--cream); }
   color: var(--terracotta);
   white-space: nowrap;
   font-weight: 600;
+  flex-shrink: 0;
+  text-align: right;
   text-align: right;
 }
 
 .menu-item-kv {
   display: block;
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   color: var(--gold);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  white-space: normal;
+  word-break: break-word;
+  text-align: right;
+  margin-top: 3px;
+  max-width: 120px;
 }
 
 .menu-note {
@@ -1281,8 +1294,8 @@ nav.dark .nav-lang-btn:not(.active):hover {
 .menu-items .menu-item .add-to-cart {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 1rem;
+  margin: 0 auto;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -2046,12 +2059,12 @@ body.cart-open {
 .menu-item-buttons {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 4px;
+  width: 36px;
 }
 
 .btn-single {
@@ -2366,7 +2379,7 @@ body.cart-open {
         <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">🐟 Shiitake al Salmone</div><div class="menu-item-desc" data-tx="s015">Shiitake, olijfolie, look, zalm, platte peterselie, room, zwarte peper</div></div><div class="menu-item-price">€20,00</div><button class="add-to-cart" onclick="addToCart(this,'🐟 Shiitake al Salmone',20.00)" aria-label="Toevoegen">+</button></div>
         <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">🍤 Scampi Shiitake</div><div class="menu-item-desc" data-tx="s016">Scampi, look, olijfolie, shiitake, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas</div></div><div class="menu-item-price">€20,00</div><button class="add-to-cart" onclick="addToCart(this,'🍤 Scampi Shiitake',20.00)" aria-label="Toevoegen">+</button></div>
       </div>
-      <div class="menu-note" data-tx="menu-note-sug">⭐ Suggesties wisselen regelmatig. Vraag naar de weekspecial!</div>
+      <div class="menu-note" id="menu-note-sug-el" data-tx="menu-note-sug">⭐ Suggesties wisselen regelmatig. Vraag naar de weekspecial!</div>
     </div>
 
     <!-- VEGETARISCH -->
@@ -3601,6 +3614,19 @@ function setLang(lang) {
   tx('[data-tx="footer-col1-title"]','footer-col1-title');
   tx('[data-tx="footer-col2-title"]','footer-col2-title');
   tx('[data-tx="footer-bottom1"]',   'footer-bottom1');
+  /* Special notice - re-evaluate for language */
+  var noticeBar2 = document.getElementById('special-notice-bar');
+  var noticeText2 = document.getElementById('special-notice-text');
+  if (noticeBar2 && noticeText2 && window._hoursData) {
+    var notice2 = lang === 'en' ? (window._hoursData.special_notice_en || '') : (window._hoursData.special_notice_nl || '');
+    if (notice2 && notice2.trim() !== '') {
+      noticeText2.textContent = notice2;
+      noticeBar2.style.display = 'block';
+    } else {
+      noticeBar2.style.display = 'none';
+    }
+  }
+
   /* Order timing notice */
   document.querySelectorAll('[data-tx="order-timing-label"]').forEach(function(e) {
     if (t['order-timing-label']) e.textContent = t['order-timing-label'];
@@ -4003,8 +4029,8 @@ function sendWhatsApp() {
     var m = belgiumTime.getMinutes();
     var totalMins = h * 60 + m;
 
-    var inLunch  = (totalMins >= 9*60+30  && totalMins <  10*60+30);
-    var inDinner = (totalMins >= 13*60+30 && totalMins <  16*60+30);
+    var inLunch  = (totalMins >= 9*60+30  && totalMins <= 10*60+30);
+    var inDinner = (totalMins >= 13*60+30 && totalMins <= 16*60+30);
 
     if (!inLunch && !inDinner) {
       var warningMsg = isEN
@@ -4014,8 +4040,9 @@ function sendWhatsApp() {
       return;
     }
   } catch(e) {
-    // If timezone conversion fails, allow the order through
-    console.warn('Timezone check failed:', e);
+    // If timezone check fails entirely, allow the order through
+    console.warn('Order window check failed:', e);
+    // Continue to send WhatsApp order
   }
   // ─────────────────────────────────────────────────────────────────────────
 
@@ -4272,6 +4299,21 @@ if (window.netlifyIdentity) {
     if (ih && d.middag_nl) {
       ih.innerHTML = d.middag_nl + ' &amp; ' + (d.avond_nl||'').replace(/^Ma.Vr: /,'') + '<br>Za, Zo &amp; feestdagen: gesloten';
     }
+    /* Special notice banner */
+    var noticeBar = document.getElementById('special-notice-bar');
+    var noticeText = document.getElementById('special-notice-text');
+    if (noticeBar && noticeText) {
+      var notice = (typeof currentLang !== 'undefined' && currentLang === 'en')
+        ? (d.special_notice_en || '')
+        : (d.special_notice_nl || '');
+      if (notice && notice.trim() !== '') {
+        noticeText.textContent = notice;
+        noticeBar.style.display = 'block';
+      } else {
+        noticeBar.style.display = 'none';
+      }
+    }
+
     /* patch TRANSLATIONS for EN switching */
     if (typeof TRANSLATIONS !== 'undefined') {
       TRANSLATIONS.nl['footer-hours1'] = d.middag_nl||'';
@@ -4292,7 +4334,13 @@ if (window.netlifyIdentity) {
     var container = panel.querySelector('.menu-items');
     if (!container) return;
     container.innerHTML = '';
-    items.forEach(function(item) {
+    // Sort by price ascending
+    var sortedItems = items.slice().sort(function(a, b) {
+      var pa = parseFloat(String(a.price || '0').replace(',', '.')) || 0;
+      var pb = parseFloat(String(b.price || '0').replace(',', '.')) || 0;
+      return pa - pb;
+    });
+    sortedItems.forEach(function(item) {
       // Parse price — handle integer, float, string robustly
       var price = parseFloat(String(item.price || '0').replace(',', '.')) || 0;
       var hasPrice = price > 0;
