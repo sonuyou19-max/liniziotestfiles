@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "name": "🥩 Panna e Prosciutto",
-      "desc_nl": "Gekookte hesp, verse room, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Cooked ham, fresh cream, PARMIGIANO REGGIANO D.O.P",
-      "price": "16.00",
-      "kv": ""
-    },
-    {
       "name": "🥩 Amatriciana",
       "desc_nl": "Tomatensaus, ajuin, spek, verse tomaten, basilicum, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Tomato sauce, onion, bacon, fresh tomatoes, basil, PARMIGIANO REGGIANO D.O.P",
@@ -21,6 +14,13 @@
       "price": "16.00",
       "kv": "KV €23,00🥡🥡 medium bekers ",
       "sold_out": false
+    },
+    {
+      "name": "🥩 Panna e Prosciutto",
+      "desc_nl": "Gekookte hesp, verse room, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cooked ham, fresh cream, PARMIGIANO REGGIANO D.O.P",
+      "price": "16.00",
+      "kv": ""
     },
     {
       "name": "🥩 Arrabbiata con Salame",
