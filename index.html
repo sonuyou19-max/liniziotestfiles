@@ -3615,19 +3615,6 @@ function setLang(lang) {
   tx('[data-tx="footer-col1-title"]','footer-col1-title');
   tx('[data-tx="footer-col2-title"]','footer-col2-title');
   tx('[data-tx="footer-bottom1"]',   'footer-bottom1');
-  /* Special notice - re-evaluate for language */
-  var noticeBar2 = document.getElementById('special-notice-bar');
-  var noticeText2 = document.getElementById('special-notice-text');
-  if (noticeBar2 && noticeText2 && window._hoursData) {
-    var notice2 = lang === 'en' ? (window._hoursData.special_notice_en || '') : (window._hoursData.special_notice_nl || '');
-    if (notice2 && notice2.trim() !== '') {
-      noticeText2.textContent = notice2;
-      noticeBar2.style.display = 'block';
-    } else {
-      noticeBar2.style.display = 'none';
-    }
-  }
-
   /* Order timing notice */
   document.querySelectorAll('[data-tx="order-timing-label"]').forEach(function(e) {
     if (t['order-timing-label']) e.textContent = t['order-timing-label'];
@@ -3697,6 +3684,17 @@ function setLang(lang) {
 
   /* ── MENU NOTES ── */
   tx('[data-tx="menu-note-sug"]', 'menu-note-sug');
+  // Update suggesties note from CMS data
+  var noteEl2 = document.getElementById('menu-note-sug-el');
+  if (noteEl2 && window._suggestiesData) {
+    var noteText2 = lang === 'en' ? (window._suggestiesData.note_en || '') : (window._suggestiesData.note_nl || '');
+    if (noteText2 && noteText2.trim()) {
+      noteEl2.textContent = '⭐ ' + noteText2;
+      noteEl2.style.display = '';
+    } else {
+      noteEl2.style.display = 'none';
+    }
+  }
 
   /* Special notice language switch */
   var nb = document.getElementById('special-notice-bar');
@@ -4320,6 +4318,8 @@ if (window.netlifyIdentity) {
     if (ih && d.middag_nl) {
       ih.innerHTML = d.middag_nl + ' &amp; ' + (d.avond_nl||'').replace(/^Ma.Vr: /,'') + '<br>Za, Zo &amp; feestdagen: gesloten';
     }
+    window._hoursData = d;
+
     /* Special notice banner */
     var noticeBar = document.getElementById('special-notice-bar');
     var noticeText = document.getElementById('special-notice-text');
@@ -4493,14 +4493,27 @@ if (window.netlifyIdentity) {
   }
 
   /* Load all menu tabs */
-  [
-    ['menu_suggesties','suggestie'],
-    ['menu_vegetarisch','vegetarisch'],
-    ['menu_vlees','vlees'],
-    ['menu_vis','vis']
-  ].forEach(function(pair) {
-    fetchJSON('/content/' + pair[0] + '.json', function(d) {
-      if (d && d.items) buildTab(pair[1], d.items);
+  fetchJSON('/content/menu_suggesties.json', function(d) {
+    if (d && d.items) buildTab('suggestie', d.items);
+    // Handle suggesties note
+    window._suggestiesData = d;
+    var noteEl = document.getElementById('menu-note-sug-el');
+    if (noteEl && d) {
+      var isEN = (typeof currentLang !== 'undefined' && currentLang === 'en');
+      var noteText = isEN ? (d.note_en || '') : (d.note_nl || '');
+      if (noteText && noteText.trim()) {
+        noteEl.textContent = '⭐ ' + noteText;
+        noteEl.style.display = '';
+      } else {
+        noteEl.style.display = 'none';
+      }
+    }
+  });
+
+  ['menu_vegetarisch','menu_vlees','menu_vis'].forEach(function(tab) {
+    var tabId = tab.replace('menu_','');
+    fetchJSON('/content/' + tab + '.json', function(d) {
+      if (d && d.items) buildTab(tabId, d.items);
     });
   });
 
