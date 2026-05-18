@@ -2554,6 +2554,7 @@ body.cart-open {
     <h2 class="section-title reveal" data-tx="section-title-hours">Openingsuren</h2>
 
     <div class="hours-main">
+      <div id="special-notice-bar" style="display:none;background:rgba(196,98,45,0.1);border-left:3px solid var(--terracotta);border-radius:0 4px 4px 0;padding:0.7rem 1rem;margin-bottom:1rem;font-family:'Josefin Sans',sans-serif;font-size:0.85rem;color:var(--warm-black);line-height:1.6;"><span id="special-notice-text"></span></div>
       <table class="hours-table reveal">
         <tr><td data-tx="day-mon">Maandag</td><td>12:00–13:15 &amp; 18:00–20:45 <span class="hours-badge badge-open">Open</span></td></tr>
         <tr><td data-tx="day-tue">Dinsdag</td><td>12:00–13:15 &amp; 18:00–20:45 <span class="hours-badge badge-open">Open</span></td></tr>
@@ -3696,6 +3697,20 @@ function setLang(lang) {
 
   /* ── MENU NOTES ── */
   tx('[data-tx="menu-note-sug"]', 'menu-note-sug');
+
+  /* Special notice language switch */
+  var nb = document.getElementById('special-notice-bar');
+  var nt = document.getElementById('special-notice-text');
+  if (nb && nt && window._hoursData) {
+    var nd = window._hoursData;
+    var nv = lang === 'en' ? (nd.special_notice_en || '') : (nd.special_notice_nl || '');
+    if (nv && nv.trim() !== '') {
+      nt.textContent = nv;
+      nb.style.display = 'block';
+    } else {
+      nb.style.display = 'none';
+    }
+  }
 
   /* ── GENERIC LOOP — catches all CMS-generated menu descriptions ── */
   document.querySelectorAll('[data-tx]').forEach(function(el) {
