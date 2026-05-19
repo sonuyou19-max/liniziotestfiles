@@ -1,8 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-  base_url: https://darling-pithivier-818db9.netlify.app
-
+  
 media_folder: "images"
 public_folder: "/images"
 
