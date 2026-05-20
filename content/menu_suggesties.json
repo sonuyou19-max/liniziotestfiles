@@ -8,13 +8,6 @@
       "kv": ""
     },
     {
-      "name": "🎃 Gnocchi met Pompoen",
-      "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, parmezaanschilfers",
-      "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, Parmesan shavings",
-      "price": "16.00",
-      "kv": ""
-    },
-    {
       "name": "🥦 Broccoli (Linguine)",
       "desc_nl": "Linguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
       "desc_en": "Linguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper",
@@ -23,16 +16,23 @@
       "sold_out": false
     },
     {
-      "name": "🍅 Gnocchi alla Sorrentina",
-      "desc_nl": "Olijfolie, verse tomaten, ajuin, look, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basilicum, zwarte peper",
-      "desc_en": "Olive oil, fresh tomatoes, onion, garlic, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basil, black pepper",
+      "name": "🍅 Burrata \"Nieuwkomer\"",
+      "desc_nl": "Tomaten (geel of rood afhankelijk van seizoen), burrata, sjalot, extra vierge olijfolie, chilipeper, verse basilicum, zout",
+      "desc_en": "Tomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt",
       "price": "16.00",
       "kv": ""
     },
     {
-      "name": "🍅 Burrata \"Nieuwkomer\"",
-      "desc_nl": "Tomaten (geel of rood afhankelijk van seizoen), burrata, sjalot, extra vierge olijfolie, chilipeper, verse basilicum, zout",
-      "desc_en": "Tomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt",
+      "name": "🎃 Gnocchi met Pompoen",
+      "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, parmezaanschilfers",
+      "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, Parmesan shavings",
+      "price": "16.00",
+      "kv": ""
+    },
+    {
+      "name": "🍅 Gnocchi alla Sorrentina",
+      "desc_nl": "Olijfolie, verse tomaten, ajuin, look, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basilicum, zwarte peper",
+      "desc_en": "Olive oil, fresh tomatoes, onion, garlic, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basil, black pepper",
       "price": "16.00",
       "kv": ""
     },
@@ -122,6 +122,6 @@
       "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
     }
   ],
-  "note_nl": "Try out 1 ",
-  "note_en": "Try out 2 "
+  "note_nl": "",
+  "note_en": ""
 }
