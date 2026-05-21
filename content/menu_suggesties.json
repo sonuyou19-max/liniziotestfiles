@@ -20,7 +20,8 @@
       "desc_nl": "Tomaten (geel of rood afhankelijk van seizoen), burrata, sjalot, extra vierge olijfolie, chilipeper, verse basilicum, zout",
       "desc_en": "Tomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt",
       "price": "16.00",
-      "kv": ""
+      "kv": "34 euro with cream",
+      "sold_out": true
     },
     {
       "name": "🎃 Gnocchi met Pompoen",
@@ -122,6 +123,6 @@
       "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
     }
   ],
-  "note_nl": "",
-  "note_en": ""
+  "note_nl": "Try out this",
+  "note_en": "Try out that"
 }
