@@ -21,7 +21,7 @@
       "desc_en": "Tomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt",
       "price": "16.00",
       "kv": "34 euro with cream",
-      "sold_out": true
+      "sold_out": false
     },
     {
       "name": "🎃 Gnocchi met Pompoen",
