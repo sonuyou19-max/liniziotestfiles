@@ -6,7 +6,7 @@
 <meta name="description" content="L'inizio Pasta Bar in Leuven — verse Italiaanse pasta bereid aan het raam. Bestel online via WhatsApp. Parijsstraat 39, 3000 Leuven.">
 <meta property="og:title" content="L'inizio – Pasta Bar · Leuven">
 <meta property="og:description" content="Verse Italiaanse pasta, bereid voor uw ogen. Leuven's favoriete pasta bar sinds jaren.">
-<meta property="og:url" content="https://linizio-leuven.netlify.app/">
+<meta property="og:url" content="https://linizio.be">
 <meta property="og:type" content="restaurant">
 <meta name="theme-color" content="#C4622D">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -2198,6 +2198,18 @@ body.cart-open {
 }
 </style>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  // Tell Netlify Identity which site to use for authentication
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </head>
 <body>
 
@@ -4355,13 +4367,8 @@ if (window.netlifyIdentity) {
     var container = panel.querySelector('.menu-items');
     if (!container) return;
     container.innerHTML = '';
-    // Sort by price ascending
-    var sortedItems = items.slice().sort(function(a, b) {
-      var pa = parseFloat(String(a.price || '0').replace(',', '.')) || 0;
-      var pb = parseFloat(String(b.price || '0').replace(',', '.')) || 0;
-      return pa - pb;
-    });
-    sortedItems.forEach(function(item) {
+    // Respect CMS order — owner controls order via drag and drop in admin panel
+    items.forEach(function(item) {
       // Parse price — handle integer, float, string robustly
       var price = parseFloat(String(item.price || '0').replace(',', '.')) || 0;
       var hasPrice = price > 0;
