@@ -28,8 +28,25 @@ collections:
         file: "content/hours.json"
         format: json
         fields:
-          - { label: "⚠️ Speciale mededeling NL (laat leeg als geen melding)", name: "special_notice_nl", widget: "string", required: false, hint: "Bijv: Vrijdag 11/05: gesloten middag. Vanavond open vanaf 18:00." }
-          - { label: "⚠️ Special notice EN (leave empty if no notice)", name: "special_notice_en", widget: "string", required: false, hint: "E.g: Friday 11/05: closed at lunch. Open again this evening from 18:00." }
+          - label: "🚫 Sluitingen / Closures"
+            name: "closures"
+            widget: "list"
+            required: false
+            summary: "{{fields.start}} → {{fields.end}}"
+            hint: "Zaterdag, zondag en wettelijke feestdagen zijn automatisch gesloten. Voeg hier enkel extra sluitingen toe. Tijdens een sluiting kan er niet besteld worden (WhatsApp, bellen en aan het raam worden verborgen). Hele dag: van 00:00 tot 23:59."
+            fields:
+              - { label: "Van / From", name: "start", widget: "datetime", format: "YYYY-MM-DD HH:mm", date_format: "DD/MM/YYYY", time_format: "HH:mm", picker_utc: false }
+              - { label: "Tot / Until", name: "end", widget: "datetime", format: "YYYY-MM-DD HH:mm", date_format: "DD/MM/YYYY", time_format: "HH:mm", picker_utc: false }
+              - { label: "Reden NL (optioneel)", name: "reason_nl", widget: "string", required: false, hint: "Bijv: vakantie" }
+              - { label: "Reason EN (optional)", name: "reason_en", widget: "string", required: false, hint: "E.g: holiday" }
+          - label: "✅ Toch open op feestdag / Open on a public holiday"
+            name: "open_holidays"
+            widget: "list"
+            required: false
+            hint: "Enkel invullen als u op een wettelijke feestdag tóch open bent."
+            field: { label: "Datum / Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, picker_utc: false }
+          - { label: "⚠️ Speciale mededeling NL (laat leeg als geen melding)", name: "special_notice_nl", widget: "string", required: false, hint: "Voor algemene mededelingen. Sluitingen hierboven verschijnen automatisch op de website." }
+          - { label: "⚠️ Special notice EN (leave empty if no notice)", name: "special_notice_en", widget: "string", required: false, hint: "For general announcements. Closures above appear on the website automatically." }
           - { label: "Middag (NL)", name: "middag_nl", widget: "string", default: "Ma–Vr: 12:00–13:15" }
           - { label: "Middag (EN)", name: "middag_en", widget: "string", default: "Mon–Fri: 12:00–13:15" }
           - { label: "Avond (NL)", name: "avond_nl", widget: "string", default: "Ma–Vr: 18:00–20:45" }
