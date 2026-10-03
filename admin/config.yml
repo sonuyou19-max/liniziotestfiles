@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-  base_url: https://darling-pithivier-818db9.netlify.app
+  base_url: https://statuesque-licorice-8757e4.netlify.app  # SANDBOX ONLY — owner repo must keep darling-pithivier-818db9
 
 media_folder: "images"
 public_folder: "/images"
