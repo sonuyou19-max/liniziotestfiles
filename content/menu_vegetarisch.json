@@ -1,30 +1,28 @@
 {
   "items": [
     {
-      "name": "🍅 Napoli met verse tomaten",
-      "desc_nl": "Tomatensaus, verse tomaten, ajuin, PARMIGIANO REGGIANO D.O.P, basilicum",
-      "desc_en": "Tomato sauce, fresh tomatoes, onion, PARMIGIANO REGGIANO D.O.P, basil",
-      "price": "11.50",
-      "kv": "",
-      "sold_out": false
+      "price": 6,
+      "sold_out": false,
+      "desc_nl": "Voeg burrata toe aan elk recept (behalve visgerechten) voor extra romigheid\n\n“Burrata – Verse Italiaanse kaas uit Puglia met een zachte mozzarellabuitenkant en een romige, smeuïge kern. Een echte Italiaanse specialiteit.”",
+      "name": "🧀 EXTRA BURRATA?!",
+      "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess “Burrata – A premium fresh Italian cheese from Puglia, featuring a delicate mozzarella shell filled with a luscious, creamy heart. Rich, smooth, and indulgent.”"
     },
     {
-      "name": "🍅 Napoli al Pomodoro Fresco (Rigatoni of Linguine)",
-      "desc_nl": "Olijfolie, verse tomaten, ajuin, PARMIGIANO REGGIANO D.O.P, basilicum, zwarte peper",
-      "desc_en": "Olive oil, fresh tomatoes, onion, PARMIGIANO REGGIANO D.O.P, basil, black pepper",
-      "price": "11.50",
+      "name": "🧄🍅 ARRABBIATA",
+      "desc_nl": "Kerstomatensaus, look, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Cherry tomato sauce, garlic, chilli, basil, PARMIGIANO REGGIANO D.O.P",
+      "price": "15.00",
       "kv": ""
     },
     {
-      "name": "🍅 Gradisca met verse tomaten",
-      "desc_nl": "Tomatensaus, verse room, verse tomaten, PARMIGIANO REGGIANO D.O.P, peterselie, zwarte peper",
-      "desc_en": "Tomato sauce, fresh cream, fresh tomatoes, PARMIGIANO REGGIANO D.O.P, parsley, black pepper",
-      "price": "12.50",
-      "kv": "",
-      "sold_out": false
+      "name": "🍆 AUBERGINE ALLA NORMA CON RICOTTA",
+      "desc_nl": "Kerstomatensaus, look, ajuin, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basilicum, zwarte peper",
+      "desc_en": "Cherry tomato sauce, garlic, onion, eggplants , mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper",
+      "price": "17.00",
+      "kv": ""
     },
     {
-      "name": "🧄 Look (Linguine)",
+      "name": "🧄 AGLIO OLIO PREZZEMOLO E PEPERONCINO",
       "desc_nl": "Olijfolie, look, peterselie, peperoncino pili-pili, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Olive oil, garlic, parsley, peperoncino chilli, PARMIGIANO REGGIANO D.O.P",
       "price": "13.50",
@@ -32,70 +30,7 @@
       "sold_out": false
     },
     {
-      "name": "🧄🍅 Arrabbiata ",
-      "desc_nl": "Kerstomatensaus, look, pilipili, basilicum, PARMIGIANO REGGIANO D.O.P",
-      "desc_en": "Cherry tomato sauce, garlic, chilli, basil, PARMIGIANO REGGIANO D.O.P",
-      "price": "15.00",
-      "kv": ""
-    },
-    {
-      "name": "🧀 4 Kazen (Gnocchi of Rigatoni)",
-      "desc_nl": "Taleggio, mascarpone, gorgonzola, PARMIGIANO REGGIANO D.O.P, verse room",
-      "desc_en": "Taleggio, mascarpone, gorgonzola, PARMIGIANO REGGIANO D.O.P, fresh cream",
-      "price": "16.00",
-      "kv": ""
-    },
-    {
-      "name": "🍅 Gradisca ai Pomodori Secchi",
-      "desc_nl": "Tomatensaus, verse room, gedroogde tomaten, PARMIGIANO REGGIANO D.O.P, peterselie, parmezaanschilfers, zwarte peper",
-      "desc_en": "Tomato sauce, fresh cream, sun-dried tomatoes, PARMIGIANO REGGIANO D.O.P, parsley, Parmesan shavings, black pepper",
-      "price": "16.00",
-      "kv": ""
-    },
-    {
-      "name": " 🧀Buffels Mozzarella (lauwe saus)",
-      "desc_nl": "Kerstomatensaus, ajuin, pesto, gedroogde tomaten, mozzarella van buffelmelk, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
-      "desc_en": "Cherry tomato sauce, onion, pesto, sun-dried tomatoes, buffalo mozzarella, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
-      "price": "16.00",
-      "kv": ""
-    },
-    {
-      "name": "🔴 Rode Biet",
-      "desc_nl": "Olijfolie, rode bieten, ajuin, room, ricotta kaas, PARMIGIANO REGGIANO D.O.P, platte peterselie, zwarte peper",
-      "desc_en": "Olive oil, beetroot, onion, cream, ricotta cheese, PARMIGIANO REGGIANO D.O.P, flat-leaf parsley, black pepper",
-      "price": "16.00",
-      "kv": ""
-    },
-    {
-      "name": "🥗 Vegetariana (ook zonder tomatensaus)",
-      "desc_nl": "Tomatensaus, look, ajuin, verse tomaten, broccoli, courgettes, kappers, basilicum, PARMIGIANO REGGIANO D.O.P, zwarte peper",
-      "desc_en": "Tomato sauce, garlic, onion, fresh tomatoes, broccoli, courgette, capers, basil, PARMIGIANO REGGIANO D.O.P, black pepper",
-      "price": "17.00",
-      "kv": "KV €23,00🥡🥡 medium bekers "
-    },
-    {
-      "name": "🍆 Aubergine alla Norma con Ricotta",
-      "desc_nl": "Kerstomatensaus, look, ajuin, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basilicum, zwarte peper",
-      "desc_en": "Cherry tomato sauce, garlic, onion, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
-      "name": "🍅 Napoli al Pomodoro Fresco, Zucchine e Pesto",
-      "desc_nl": "Tomatensaus, verse tomaten, courgettes, ajuin, PARMIGIANO REGGIANO D.O.P, pesto, zwarte peper",
-      "desc_en": "Tomato sauce, fresh tomatoes, courgette, onion, PARMIGIANO REGGIANO D.O.P, pesto, black pepper",
-      "price": "17.00",
-      "kv": "KV €23,00🥡🥡 medium bekers "
-    },
-    {
-      "name": "🎃 Alla Zucca met room (Fusilli of Gnocchi)",
-      "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, parmezaanschilfers",
-      "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, Parmesan shavings",
-      "price": "17.00",
-      "kv": "KV €23,00🥡🥡 medium bekers "
-    },
-    {
-      "name": "🥦🧀 Broccoli 4 Kaas",
+      "name": "🥦🧀 BROCCOLI 4 KAZEN",
       "desc_nl": "Broccoli, look, mascarpone, taleggio, gorgonzola, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
       "desc_en": "Broccoli, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "17.00",
@@ -103,46 +38,140 @@
       "sold_out": false
     },
     {
-      "name": "🌿 Alla Sasi (Fusilli of Linguine)",
-      "desc_nl": "Olijfolie, peperoncino, look, peterselie, courgettes, geroosterde pijnappelpitten, pesto, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers",
-      "desc_en": "Olive oil, chilli, garlic, parsley, courgette, toasted pine nuts, pesto, PARMIGIANO REGGIANO D.O.P, Parmesan shavings",
-      "price": "17.00",
-      "kv": ""
+      "price": 16,
+      "sold_out": false,
+      "name": "🥦 BROCCOLI MET (LINGUINE)",
+      "desc_nl": "\nLinguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
+      "desc_en": "🥦 Broccoli (Linguine)\nLinguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper"
     },
     {
-      "name": "🎃 Pompoen zonder room (Linguine)",
-      "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, platte peterselie",
-      "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, flat-leaf parsley",
-      "price": "17.00",
-      "kv": ""
+      "price": 16,
+      "sold_out": false,
+      "name": "🍅 BURRATA CON POMODORO FRESCO",
+      "desc_nl": "🍅 Burrata \nTomaten (geel of rood afhankelijk van seizoen), burrata, sjalot, extra vierge olijfolie, chilipeper, verse basilicum, zout",
+      "desc_en": " Burrata\nTomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt"
     },
     {
-      "name": "🍅🥦 Vegetariana met Linguine",
-      "desc_nl": "Look, verse tomaten, verse broccoli, verse courgettes, platte peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
-      "desc_en": "Garlic, fresh tomatoes, fresh broccoli, fresh courgette, flat-leaf parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
-      "price": "17.00",
-      "kv": ""
+      "name": "🥦🌿 🧄 BROCCOLI PESTO & RICOTTA",
+      "desc_nl": "Broccoli, pesto, ricotta, look, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
+      "desc_en": "Broccoli, pesto, ricotta, garlic, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
+      "price": "18.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
     },
     {
-      "name": "🫒 Olijven en Kappers (Linguine)",
+      "name": "🍅 GRADISCA AI POMODORI SECCHI",
+      "desc_nl": "Tomatensaus, verse room, gedroogde tomaten, PARMIGIANO REGGIANO D.O.P, peterselie, parmezaanschilfers, zwarte peper",
+      "desc_en": "Tomato sauce, fresh cream, sun-dried tomatoes, PARMIGIANO REGGIANO D.O.P, parsley, Parmesan shavings, black pepper",
+      "price": "16.00",
+      "kv": "",
+      "sold_out": false
+    },
+    {
+      "name": "🍅 GRADISCA AL POMODORO FRESCO",
+      "desc_nl": "Tomatensaus, verse room, verse tomaten, PARMIGIANO REGGIANO D.O.P, peterselie, zwarte peper",
+      "desc_en": "Tomato sauce, fresh cream, fresh tomatoes, PARMIGIANO REGGIANO D.O.P, parsley, black pepper",
+      "price": "12.50",
+      "kv": "",
+      "sold_out": false
+    },
+    {
+      "name": "🍅 NAPOLI AL POMODORO FRESCO(RIGATONI OF LINGUINE)",
+      "desc_nl": "Tomatensaus, verse tomaten, ajuin, PARMIGIANO REGGIANO D.O.P, basilicum",
+      "desc_en": "Tomato sauce, fresh tomatoes, onion, PARMIGIANO REGGIANO D.O.P, basil",
+      "price": "11.50",
+      "kv": "",
+      "sold_out": false
+    },
+    {
+      "name": "🍅 NAPOLI AL POMODORO FRESCO ZUCCHINE E PESTO",
+      "desc_nl": "Tomatensaus, verse tomaten, courgettes, ajuin, PARMIGIANO REGGIANO D.O.P, pesto, zwarte peper",
+      "desc_en": "Tomato sauce, fresh tomatoes, courgette, onion, PARMIGIANO REGGIANO D.O.P, pesto, black pepper",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🫒 OLIVE E CAPPERI (LINGUINE)",
       "desc_nl": "Olijven, kappers, look, kerstomaatjes, platte peterselie, PARMIGIANO REGGIANO D.O.P",
       "desc_en": "Olives, capers, garlic, cherry tomatoes, flat-leaf parsley, PARMIGIANO REGGIANO D.O.P",
       "price": "17.00",
       "kv": ""
     },
     {
-      "name": "🌿 Pesto (Linguine of Penne)",
+      "name": "🎃 POMPOEN ZONDER ROOM  (LINGUINE)",
+      "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, platte peterselie",
+      "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, flat-leaf parsley",
+      "price": "17.00",
+      "kv": ""
+    },
+    {
+      "name": "🌿 🧄 PESTO  (LINGUINE OF PENNE)",
       "desc_nl": "Verse basilicum, look, pijnappelpitten, muskaatnoot, PARMIGIANO REGGIANO D.O.P, zwarte peper",
       "desc_en": "Fresh basil, garlic, pine nuts, nutmeg, PARMIGIANO REGGIANO D.O.P, black pepper",
       "price": "18.00",
       "kv": ""
     },
     {
-      "name": "🥦🌿 Broccoli Pesto e Ricotta",
-      "desc_nl": "Broccoli, pesto, ricotta, look, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
-      "desc_en": "Broccoli, pesto, ricotta, garlic, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
-      "price": "18.00",
+      "name": "🧀 4 KAZEN  (RIGATONI OF GNOCCHI)",
+      "desc_nl": "Taleggio, mascarpone, gorgonzola, PARMIGIANO REGGIANO D.O.P, verse room",
+      "desc_en": "Taleggio, mascarpone, gorgonzola, PARMIGIANO REGGIANO D.O.P, fresh cream",
+      "price": "16.00",
+      "kv": ""
+    },
+    {
+      "price": 16,
+      "sold_out": false,
+      "name": "🍅 SORRENTINA CON GNOCCHI",
+      "desc_nl": "\nOlijfolie, verse tomaten, ajuin, look, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basilicum, zwarte peper",
+      "desc_en": "🍅 Gnocchi alla Sorrentina\nOlive oil, fresh tomatoes, onion, garlic, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basil, black pepper"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "desc_nl": "Shiitake, look, boter, zwarte peper, Parmezaan kaas",
+      "name": "🍄 SHIITAKE (LUNGUINE)",
+      "desc_en": "\nShiitake, garlic, butter, black pepper, Parmesan cheese"
+    },
+    {
+      "price": 17.5,
+      "sold_out": false,
+      "name": "🧀 SHIITAKE 4 KAZEN",
+      "desc_nl": "\nShiitake, look, mascarpone, taleggio, gorgonzola, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
+      "desc_en": "🧀 Shiitake 4 Kazen\nShiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper"
+    },
+    {
+      "name": "🍅🥦 🥗 VEGETARIANA ( LINGUINE)",
+      "desc_nl": "Look, verse tomaten, verse broccoli, verse courgettes, platte peterselie, PARMIGIANO REGGIANO D.O.P, zwarte peper",
+      "desc_en": "Garlic, fresh tomatoes, fresh broccoli, fresh courgette, flat-leaf parsley, PARMIGIANO REGGIANO D.O.P, black pepper",
+      "price": "17.00",
+      "kv": ""
+    },
+    {
+      "name": " 🍅🥦 🥗 VEGETARIANA ",
+      "desc_nl": "Tomatensaus, look, ajuin, verse tomaten, broccoli, courgettes, kappers, basilicum,peterselie,PARMIGIANO REGGIANO D.O.P, zwarte peper",
+      "desc_en": "Tomato sauce, garlic, onion, fresh tomatoes, broccoli, courgette, capers, basil, parsley PARMIGIANO REGGIANO D.O.P, black pepper",
+      "price": "17.00",
       "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": "🎃 ZUCCA MET ROOM ( FUSILLI OF GNOCCHI)",
+      "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, parmezaanschilfers",
+      "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, Parmesan shavings",
+      "price": "17.00",
+      "kv": "KV €23,00🥡🥡 medium bekers "
+    },
+    {
+      "name": " 🥒 ZUCCHINE ALLA SASI",
+      "desc_nl": "Olijfolie, peperoncino, look, peterselie, courgettes, geroosterde pijnappelpitten, pesto, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers",
+      "desc_en": "Olive oil, chilli, garlic, parsley, courgette, toasted pine nuts, pesto, PARMIGIANO REGGIANO D.O.P, Parmesan shavings",
+      "price": "17.00",
+      "kv": ""
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "desc_nl": "\nKerstomatensaus, ajuin, pesto, gedroogde tomaten, mozzarella van buffelmelk, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper Mozzarella di Bufala – Authentieke Italiaanse mozzarella, gemaakt van buffelmelk. Zacht, sappig en vol van smaak, afkomstig uit Zuid-Italië.",
+      "name": "🧀BUFALINA (LAUWE SAUS)",
+      "desc_en": "Cherry tomato sauce, onion, pesto, dried tomatoes, buffalo milk mozzarella, PARMIGIANO REGGIANO D.O.P, parmesan flakes, black pepper Mozzarella di Bufala – Authentic Italian mozzarella, made from buffalo milk. Soft, juicy and full of flavor, originally from southern Italy."
     }
   ]
 }

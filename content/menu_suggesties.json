@@ -1,128 +1,143 @@
 {
   "items": [
     {
-      "name": "🧀 Extra Burrata",
-      "desc_nl": "Voeg burrata toe aan elk recept (behalve visgerechten) voor extra romigheid",
-      "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess",
+      "name": "🧀 EXTRA BURRATA?!",
+      "desc_nl": "Voeg burrata toe aan elk recept (behalve visgerechten) voor extra romigheid\n\n“Burrata – Verse Italiaanse kaas uit Puglia met een zachte mozzarellabuitenkant en een romige, smeuïge kern. Een echte Italiaanse specialiteit.”",
+      "desc_en": "Add burrata to any recipe (except fish dishes) for extra creaminess\n\n“Burrata – A premium fresh Italian cheese from Puglia, featuring a delicate mozzarella shell filled with a luscious, creamy heart. Rich, smooth, and indulgent.”",
       "price": 6,
-      "kv": ""
-    },
-    {
-      "name": "🥦 Broccoli (Linguine)",
-      "desc_nl": "Linguine met olijfolie, broccoli, broccolicrème, knoflook, geraspte Parmezaanse kaas en peper",
-      "desc_en": "Linguine with olive oil, broccoli, broccoli cream, garlic, grated Parmesan and pepper",
-      "price": 16,
       "kv": "",
       "sold_out": false
     },
     {
-      "name": "🍅 Burrata \"Nieuwkomer\"",
+      "price": 17,
+      "sold_out": false,
+      "desc_nl": "\nOlijfolie,ajuin,”vlees pancetta”,tomaten saus,room,platte peterselie ,zwarte peper, PARMIGIANO REGGIANO D.O.P,VODKA.",
+      "name": "🥩VODKA",
+      "desc_en": "\nOlive oil, onion, meat pancetta, tomato sauce, cream, flat parsley, black pepper, PARMIGIANO REGGIANO D.O.P, VODKA."
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥩 🥒 ZUCCHINE E RICOTTA",
+      "desc_nl": "Tomatensaus, courgettes, ajuin, spek, witte wijn, ricottakaas, verse room, peterselie, zwarte peper, PARMIGIANO REGGIANO D.O.P",
+      "desc_en": "Tomato sauce, zucchini, onion, bacon, white wine, ricotta cheese, fresh cream, parsley, black pepper, PARMIGIANO REGGIANO D.O.P",
+      "kv": "KV €23,00🥡🥡 medium bekers"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🍆 AUBERGINE ALLA NORMA CON RICOTTA",
+      "desc_nl": "Kerstomatensaus, look, ajuin, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basilicum, zwarte peper",
+      "desc_en": "Cherry tomato sauce, garlic, onion, aubergine, mozzarella, PARMIGIANO REGGIANO D.O.P, ricotta, basil, black pepper"
+    },
+    {
+      "name": "🍅 BURRATA CON POMODORO FRESCO",
       "desc_nl": "Tomaten (geel of rood afhankelijk van seizoen), burrata, sjalot, extra vierge olijfolie, chilipeper, verse basilicum, zout",
       "desc_en": "Tomatoes (yellow or red depending on season), burrata, shallot, extra virgin olive oil, chilli, fresh basil, salt",
       "price": "16.00",
-      "kv": "euro with cream 34 ",
+      "kv": "",
       "sold_out": false
     },
     {
-      "name": "🎃 Gnocchi met Pompoen",
+      "name": "🎃 BURRATA & SPECK ALTO ADIGE & POMPOEN CREME",
+      "desc_nl": "Pompoen, room, krokante reepjes Speck Alto Adige, extra vergine olijfolie, sjalot, burrata, zout, peper",
+      "desc_en": "Pumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper",
+      "price": 18,
+      "kv": "",
+      "sold_out": false
+    },
+    {
+      "name": "🎃 POMPOEN MET GNOCCHI",
       "desc_nl": "Pompoen, pilipili, look, PARMIGIANO REGGIANO D.O.P, verse room, peterselie, parmezaanschilfers",
       "desc_en": "Pumpkin, chilli, garlic, PARMIGIANO REGGIANO D.O.P, fresh cream, parsley, Parmesan shavings",
-      "price": "16.00",
+      "price": 17,
       "kv": ""
     },
     {
-      "name": "🍅 Gnocchi alla Sorrentina",
+      "name": "🍅 SORRENTINA MET GNOCCHI",
       "desc_nl": "Olijfolie, verse tomaten, ajuin, look, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basilicum, zwarte peper",
       "desc_en": "Olive oil, fresh tomatoes, onion, garlic, PARMIGIANO REGGIANO D.O.P, SCAMORZA AFFUMICATA, basil, black pepper",
       "price": "16.00",
       "kv": ""
     },
     {
-      "name": "🧅 Genovese",
-      "desc_nl": "Traditionele Napolitaanse saus van langzaam gestoofde uien met rundvlees, wortel en selder. Geserveerd met Parmezaan",
-      "desc_en": "Traditional Neapolitan sauce of slow-braised onions with beef, carrot and celery. Served with Parmesan",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
-      "name": "🍄 Shiitake Linguine",
+      "name": "🍄 SHIITAKE MET LINGUINE",
       "desc_nl": "Shiitake, look, boter, zwarte peper, Parmezaan kaas",
       "desc_en": "Shiitake, garlic, butter, black pepper, Parmesan cheese",
       "price": "17.00",
-      "kv": ""
+      "kv": "",
+      "sold_out": false
     },
     {
-      "name": "🥓 Shiitake met Spek Alto Adige IGP",
-      "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
-      "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
-      "price": "17.00",
-      "kv": ""
-    },
-    {
-      "name": "🧀 Shiitake 4 Kazen",
+      "name": "🧀 SHIITAKE 4 FORMAGGI",
       "desc_nl": "Shiitake, look, mascarpone, taleggio, gorgonzola, verse room, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers, zwarte peper",
       "desc_en": "Shiitake, garlic, mascarpone, taleggio, gorgonzola, fresh cream, PARMIGIANO REGGIANO D.O.P, Parmesan shavings, black pepper",
       "price": "17.50",
-      "kv": ""
+      "kv": "",
+      "sold_out": false
     },
     {
-      "name": "🎃 Burrata & Speck Alto Adige met Pompoencème",
-      "desc_nl": "Pompoen, room, krokante reepjes Speck Alto Adige, extra vergine olijfolie, sjalot, burrata, zout, peper",
-      "desc_en": "Pumpkin, cream, crispy Speck Alto Adige strips, extra virgin olive oil, shallot, burrata, salt, pepper",
-      "price": "17.50",
-      "kv": ""
+      "name": "🥓 SHIITAKE MET SPEK ALTO ADIGE I.G.P.",
+      "desc_nl": "Shiitake, geroosterd spek Alto Adige, ajuin, olijfolie, room, zwarte peper, Parmezaan kaas",
+      "desc_en": "Shiitake, roasted Alto Adige bacon, onion, olive oil, cream, black pepper, Parmesan cheese",
+      "price": 17.5,
+      "kv": "",
+      "sold_out": false
     },
     {
-      "name": "🦑 Spaghetti Rode Duivels",
-      "desc_nl": "Spaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, burrata-crème, extra vierge olijfolie, verse basilicum",
-      "desc_en": "Squid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, burrata cream, extra virgin olive oil, fresh basil",
-      "price": "18.00",
-      "kv": ""
+      "name": "🐟 SHIITAKE AL SALMONE",
+      "desc_nl": "Shiitake, olijfolie, look, zalm, platte peterselie, room, zwarte peper",
+      "desc_en": "Shiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper",
+      "price": "20.00",
+      "kv": "",
+      "sold_out": false
     },
     {
-      "name": "🍤 Nero Seppia Scampi",
-      "desc_nl": "Spaghetti met inktvisinkt, gele tomaten (seizoensgebonden), rode kerstomaatjes, knoflook, chilipeper, extra vierge olijfolie, verse basilicum",
-      "desc_en": "Squid ink spaghetti, yellow tomatoes (seasonal), cherry tomatoes, garlic, chilli, extra virgin olive oil, fresh basil",
-      "price": 19,
-      "kv": ""
+      "name": "🍤 SCAMPI SHIITAKE",
+      "desc_nl": "Scampi, look, olijfolie, shiitake, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas",
+      "desc_en": "King prawns, garlic, olive oil, shiitake, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
+      "price": "20.00",
+      "kv": "",
+      "sold_out": false
     },
     {
-      "name": "🐙 Nero Seppia Octopus",
-      "desc_nl": "Spaghetti al nero di seppia, kleine inktvisjes, kerstomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper, geroosterd broodkruim",
-      "desc_en": "Squid ink spaghetti, baby squid, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper, toasted breadcrumbs",
-      "price": "19.00",
-      "kv": ""
-    },
-    {
-      "name": "🐚 Linguine con Vongole",
+      "name": "🐚 VONGOLE MET LINGUINE",
       "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vongole, schelpen",
       "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams",
       "price": 20,
       "kv": "",
-      "sold_out": true
+      "sold_out": false
     },
     {
-      "name": "🐟 Shiitake al Salmone",
-      "desc_nl": "Shiitake, olijfolie, look, zalm, platte peterselie, room, zwarte peper",
-      "desc_en": "Shiitake, olive oil, garlic, salmon, flat-leaf parsley, cream, black pepper",
-      "price": "20.00",
-      "kv": ""
-    },
-    {
-      "name": "🍤 Scampi Shiitake",
-      "desc_nl": "Scampi, look, olijfolie, shiitake, room, peper, curcuma, peterselie, zwarte peper, Parmezaan kaas",
-      "desc_en": "King prawns, garlic, olive oil, shiitake, cream, pepper, turmeric, parsley, black pepper, Parmesan cheese",
-      "price": "20.00",
-      "kv": ""
-    },
-    {
-      "price": 18,
+      "price": 20,
       "sold_out": false,
-      "name": "🍤SCAMPI MET LINGUINE",
-      "desc_nl": "Kers tomaten,look, peterselie,scampi's,zwarte peper",
-      "desc_en": "Cherry tomatoes, garlic, parsley, scampi, black pepper"
+      "name": "🐚 VONGOLE MET GNOCCHI",
+      "desc_nl": "Olijfolie, look, peterselie, kerstomaatjes, vong ole, schelpen",
+      "desc_en": "Olive oil, garlic, parsley, cherry tomatoes, vongole, clams"
+    },
+    {
+      "price": 21,
+      "sold_out": false,
+      "name": " 🐚NERO SEPPIA  MET VONGOLE",
+      "desc_nl": "Spaghetti al nero di seppia,  kers tomaatjes, knoflook, extra vierge olijfolie, witte wijn, peterselie, zeezout, zwarte peper",
+      "desc_en": "Squid ink spaghetti, cherry tomatoes, garlic, extra virgin olive oil, white wine, parsley, sea salt, black pepper"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🥒 ZUCCHINE ALLA SASI",
+      "desc_en": "Olive oil, chilli, garlic, parsley, courgette, toasted pine nuts, pesto, PARMIGIANO REGGIANO D.O.P, Parmesan shavings",
+      "desc_nl": "Olijfolie, peperoncino, look, peterselie, courgettes, geroosterde pijnappelpitten, pesto, PARMIGIANO REGGIANO D.O.P, parmezaanschilfers"
+    },
+    {
+      "price": 17,
+      "sold_out": false,
+      "name": "🍅 NAPOLI AL POMODORO FRESCO ZUCCHINE E PESTO",
+      "desc_nl": "Tomatensaus, verse tomaten, courgettes, ajuin, PARMIGIANO REGGIANO D.O.P, pesto, zwarte peper",
+      "desc_en": "Tomato sauce, fresh tomatoes, courgette, onion, PARMIGIANO REGGIANO D.O.P, pesto, black pepper",
+      "kv": "KV €23,00🥡🥡 medium bekers"
     }
   ],
-  "note_nl": "Try out this",
-  "note_en": "Try out that"
+  "note_nl": "",
+  "note_en": ""
 }
