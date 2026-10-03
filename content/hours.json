@@ -12,6 +12,10 @@
       "end": "2026-10-07 09:00",
       "reason_nl": "Test closure_NL",
       "reason_en": "Test closure_EN"
+    },
+    {
+      "start": "2026-10-09 15:16",
+      "end": "2026-10-09 23:21"
     }
   ],
   "middag_nl": "Ma–Vr: 12:00–13:15",
