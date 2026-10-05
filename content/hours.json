@@ -8,12 +8,6 @@
   "avond_en": "Mon–Fri: 18:00–20:45",
   "closures": [
     {
-      "start": "2026-10-05 00:00",
-      "end": "2026-10-07 09:00",
-      "reason_nl": "Test closure_NL",
-      "reason_en": "Test closure_EN"
-    },
-    {
       "start": "2026-10-09 15:16",
       "end": "2026-10-09 23:21"
     }
