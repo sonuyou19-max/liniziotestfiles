@@ -2261,6 +2261,19 @@ body.ordering-closed .closed-banner { display: block; }
   color: var(--terracotta);
   font-weight: 700;
 }
+
+/* One-line ticker: WhatsApp message, then the call message rolls up */
+.order-ticker { height: 1.6em; overflow: hidden; }
+.order-ticker-track { animation: order-ticker-roll 8s ease-in-out infinite; }
+.order-ticker-item { height: 1.6em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@keyframes order-ticker-roll {
+  0%, 40%   { transform: translateY(0); }
+  50%, 90%  { transform: translateY(-1.6em); }
+  100%      { transform: translateY(-3.2em); }   /* copy of the first line → seamless loop */
+}
+@media (prefers-reduced-motion: reduce) {
+  .order-ticker-track { animation: none; }
+}
 </style>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
@@ -3122,7 +3135,9 @@ const TRANSLATIONS = {
     'footer-col2-title': 'Informatie',
     'footer-bottom1': '© 2025 L\'inizio Pasta Bar · Leuven · Alle prijzen BTW inclusief',
     'footer-bottom2': 'Vers bereid · Geen levering · Afhalen aan het raam',
-    'order-timing-label': 'Besteluren:',
+    'order-timing-label': 'Bestel via WhatsApp:',
+    'order-call-label': 'Bestel via telefoon:',
+    'order-call-hours': 'altijd',
     'order-timing-hours': '09:30–10:30 & 13:30–16:30',
     'sold-out-badge': 'Uitverkocht',
     'pickup-label': 'Gewenste ophaaltijd',
@@ -3388,7 +3403,9 @@ const TRANSLATIONS = {
     'footer-col2-title': 'Information',
     'footer-bottom1': '© 2025 L\'inizio Pasta Bar · Leuven · All prices include VAT',
     'footer-bottom2': 'Made fresh · No delivery · Takeaway at the window',
-    'order-timing-label': 'Order hours:',
+    'order-timing-label': 'Order via WhatsApp:',
+    'order-call-label': 'Order via call:',
+    'order-call-hours': 'anytime',
     'order-timing-hours': '09:30–10:30 & 13:30–16:30',
     'sold-out-badge': 'Sold out',
     'pickup-label': 'Preferred pickup time',
@@ -4259,8 +4276,11 @@ setLang = function(lang) {
         <span class="cart-total-amount" id="cart-grand-total">€0,00</span>
       </div>
       <div class="order-timing-notice">
-        🕐 <strong data-tx="order-timing-label">Besteluren:</strong>
-        <span data-tx="order-timing-hours">09:30–10:30 &amp; 13:30–16:30</span>
+        <div class="order-ticker"><div class="order-ticker-track">
+          <div class="order-ticker-item">💬 <strong data-tx="order-timing-label">Bestel via WhatsApp:</strong> <span data-tx="order-timing-hours">09:30–10:30 &amp; 13:30–16:30</span></div>
+          <div class="order-ticker-item">📞 <strong data-tx="order-call-label">Bestel via telefoon:</strong> <span data-tx="order-call-hours">altijd</span></div>
+          <div class="order-ticker-item" aria-hidden="true">💬 <strong data-tx="order-timing-label">Bestel via WhatsApp:</strong> <span data-tx="order-timing-hours">09:30–10:30 &amp; 13:30–16:30</span></div>
+        </div></div>
       </div>
       <div class="cart-actions">
         <button id="cart-clear-btn" onclick="clearCart()">Wis alles</button>
