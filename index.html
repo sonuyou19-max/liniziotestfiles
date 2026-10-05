@@ -4601,15 +4601,17 @@ if (window.netlifyIdentity) {
         if (!tail || !tail.full || tail.to.getTime() !== addDays(st.now.date, lastWeekday).getTime()) break;
       }
       lastWeekday = i;
+      var dayServices = info.services;
       if (i === 0 && info.open) {
         // today: only mention services still to come
-        info.services = info.services.filter(function(s) { return s.end >= st.now.mins; });
-        if (!info.services.length) continue;
+        dayServices = info.services.filter(function(s) { return s.end >= st.now.mins; });
+        if (!dayServices.length) continue;
       }
-      var closedSvcs = info.services.filter(function(s) { return !s.open; });
+      var closedSvcs = dayServices.filter(function(s) { return !s.open; });
       if (!closedSvcs.length) continue;
       var c = (closedSvcs.filter(function(s) { return s.closure; })[0] || {}).closure || null;
-      var full = info.holiday || closedSvcs.length === info.services.length;
+      // "full" compares with the whole day, so an evening-only closure stays "'s avonds gesloten"
+      var full = info.holiday || info.services.every(function(s) { return !s.open; });
       var last = entries[entries.length - 1];
       // merge consecutive full closures (a weekend in between still counts as consecutive)
       if (full && last && last.full && !last.holiday && !info.holiday && last.closure === c &&
