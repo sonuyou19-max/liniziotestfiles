@@ -2595,7 +2595,7 @@ body.ordering-closed .closed-banner { display: block; }
           <div class="order-step-num">01</div>
           <div class="order-step-content">
             <h4 data-tx="step1-title">Stuur uw bestelling</h4>
-            <p data-tx="step1-desc">Via WhatsApp, Messenger of SMS tijdens de besteluren. Bellen kan altijd overdag en 's avonds. 10+ pasta's? 1 dag op voorhand.</p>
+            <p data-tx="step1-desc">Via WhatsApp, Messenger of SMS tijdens de besteluren. Bellen kan van 09:30 tot 20:45. 10+ pasta's? 1 dag op voorhand.</p>
           </div>
         </div>
         <div class="order-step reveal">
@@ -2631,7 +2631,7 @@ body.ordering-closed .closed-banner { display: block; }
         </div>
         <div class="order-timing">
           <p data-tx="order-timing"><strong>Besteluren:</strong> 09:30–10:30 &amp; 13:30–16:30<br>
-            <strong>Bellen:</strong> altijd overdag en 's avonds 🌛<br>
+            <strong>Bellen:</strong> 09:30–20:45<br>
             <strong>Betaling:</strong> Cash · Payconiq · QR-code
           </p>
           <p class="prepay-note" id="prepay-note"></p>
@@ -3106,7 +3106,7 @@ const TRANSLATIONS = {
     'contact-wa-label': 'WhatsApp / SMS',
     'contact-fb-label': 'Facebook Messenger',
     'contact-fb-val': 'L\'inizio Leuven Pasta Bar',
-    'order-timing': '<strong>Besteluren:</strong> 09:30 – 10:30 & 13:30 – 16:30<br><strong>Bellen</strong> kan altijd overdag en \'s avonds<br><strong>Betaling:</strong> Cash · Payconiq · QR-code',
+    'order-timing': '<strong>Besteluren:</strong> 09:30 – 10:30 & 13:30 – 16:30<br><strong>Bellen:</strong> 09:30 – 20:45<br><strong>Betaling:</strong> Cash · Payconiq · QR-code',
 
     /* HOURS */
     'section-label-hours': 'Wanneer vindt u ons?',
@@ -3137,7 +3137,7 @@ const TRANSLATIONS = {
     'footer-bottom2': 'Vers bereid · Geen levering · Afhalen aan het raam',
     'order-timing-label': 'Bestel via WhatsApp:',
     'order-call-label': 'Bestel via telefoon:',
-    'order-call-hours': 'altijd',
+    'order-call-hours': '09:30–20:45',
     'order-timing-hours': '09:30–10:30 & 13:30–16:30',
     'sold-out-badge': 'Uitverkocht',
     'pickup-label': 'Gewenste ophaaltijd',
@@ -3374,7 +3374,7 @@ const TRANSLATIONS = {
     'contact-wa-label': 'WhatsApp / SMS',
     'contact-fb-label': 'Facebook Messenger',
     'contact-fb-val': 'L\'inizio Leuven Pasta Bar',
-    'order-timing': '<strong>Order hours:</strong> 09:30 – 10:30 & 13:30 – 16:30<br><strong>Phone calls</strong> welcome any time during the day or evening<br><strong>Payment:</strong> Cash · Payconiq · QR code',
+    'order-timing': '<strong>Order hours:</strong> 09:30 – 10:30 & 13:30 – 16:30<br><strong>Phone orders:</strong> 09:30 – 20:45<br><strong>Payment:</strong> Cash · Payconiq · QR code',
 
     /* HOURS */
     'section-label-hours': 'When can you find us?',
@@ -3404,8 +3404,8 @@ const TRANSLATIONS = {
     'footer-bottom1': '© 2025 L\'inizio Pasta Bar · Leuven · All prices include VAT',
     'footer-bottom2': 'Made fresh · No delivery · Takeaway at the window',
     'order-timing-label': 'Order via WhatsApp:',
-    'order-call-label': 'Order via call:',
-    'order-call-hours': 'anytime',
+    'order-call-label': 'Order by phone:',
+    'order-call-hours': '09:30–20:45',
     'order-timing-hours': '09:30–10:30 & 13:30–16:30',
     'sold-out-badge': 'Sold out',
     'pickup-label': 'Preferred pickup time',
@@ -4278,7 +4278,7 @@ setLang = function(lang) {
       <div class="order-timing-notice">
         <div class="order-ticker"><div class="order-ticker-track">
           <div class="order-ticker-item">💬 <strong data-tx="order-timing-label">Bestel via WhatsApp:</strong> <span data-tx="order-timing-hours">09:30–10:30 &amp; 13:30–16:30</span></div>
-          <div class="order-ticker-item">📞 <strong data-tx="order-call-label">Bestel via telefoon:</strong> <span data-tx="order-call-hours">altijd</span></div>
+          <div class="order-ticker-item">📞 <strong data-tx="order-call-label">Bestel via telefoon:</strong> <span data-tx="order-call-hours">09:30–20:45</span></div>
           <div class="order-ticker-item" aria-hidden="true">💬 <strong data-tx="order-timing-label">Bestel via WhatsApp:</strong> <span data-tx="order-timing-hours">09:30–10:30 &amp; 13:30–16:30</span></div>
         </div></div>
       </div>
@@ -4400,7 +4400,7 @@ if (window.netlifyIdentity) {
    Shows only the ordering options that apply right now (Belgium time):
    • WhatsApp / SMS / Messenger — 09:30–10:30 & 13:30–16:30
    • "Toon aan raam"            — from 15 min before opening until closing
-   • Calling                    — any time on an open day
+   • Calling                    — 09:30–20:45 on an open day (ordering hours)
    Closed = weekend, Belgian public holidays (calculated for every year,
    unless the owner marks one as open), and closures planned in the CMS
    (hours.json → closures / open_holidays). On a closed day ordering is
@@ -4415,6 +4415,7 @@ if (window.netlifyIdentity) {
     { start: 9*60+30,  end: 10*60+30 },
     { start: 13*60+30, end: 16*60+30 }
   ];
+  var ORDER_HOURS = { start: 9*60+30, end: 20*60+45 };   // phone orders accepted; outside = closed
   var WINDOW_LEAD = 15;   // "Toon aan raam" appears this many minutes before opening
   var NOTICE_DAYS = 7;    // announce closures this many days ahead
 
@@ -4529,14 +4530,12 @@ if (window.netlifyIdentity) {
     };
   }
 
-  /* First moment ordering is possible again after today */
-  function nextOpening(today, cms) {
-    for (var i = 1; i <= 60; i++) {
-      var info = dayInfo(addDays(today, i), cms);
-      if (!info.open) continue;
-      var first = info.services.filter(function(s) { return s.open; })[0];
-      var wa = WA_WINDOWS.filter(function(w) { return w.start < first.start; })[0];
-      return { date: info.date, days: i, time: wa ? wa.start : first.start - WINDOW_LEAD };
+  /* First moment ordering is possible again (later today if it's still early) */
+  function nextOpening(now, cms) {
+    for (var i = 0; i <= 60; i++) {
+      if (i === 0 && now.mins >= ORDER_HOURS.start) continue;
+      var info = dayInfo(addDays(now.date, i), cms);
+      if (info.open) return { date: info.date, days: i, time: ORDER_HOURS.start };
     }
     return null;
   }
@@ -4547,8 +4546,10 @@ if (window.netlifyIdentity) {
     var today = dayInfo(now.date, cms);
     var remaining = today.services.filter(function(s) { return s.end >= t; });
     var remainingOpen = remaining.filter(function(s) { return s.open; });
-    // Closed: weekend/holiday/full-day closure, or a closure takes out the rest of today
-    var closed = !today.open || (remaining.length > 0 && remainingOpen.length === 0);
+    // Closed: weekend/holiday/full-day closure, outside ordering hours (09:30–20:45),
+    // or a closure takes out the rest of today
+    var closed = !today.open || t < ORDER_HOURS.start || t > ORDER_HOURS.end ||
+                 (remaining.length > 0 && remainingOpen.length === 0);
     var inWA = WA_WINDOWS.some(function(w) { return t >= w.start && t <= w.end; });
     return {
       closed: closed,
@@ -4557,7 +4558,7 @@ if (window.netlifyIdentity) {
       window: !closed && today.services.some(function(s) { return s.open && t >= s.start - WINDOW_LEAD && t <= s.end; }),
       openServices: today.services.filter(function(s) { return s.open; }).map(function(s) { return s.id; }),
       today: today, now: now, cms: cms,
-      reopen: closed ? nextOpening(now.date, cms) : null
+      reopen: closed ? nextOpening(now, cms) : null
     };
   }
 
@@ -4585,7 +4586,7 @@ if (window.netlifyIdentity) {
         if (!tail || !tail.full || tail.to.getTime() !== addDays(st.now.date, lastWeekday).getTime()) break;
       }
       lastWeekday = i;
-      if (i === 0 && !st.closed) {
+      if (i === 0 && info.open) {
         // today: only mention services still to come
         info.services = info.services.filter(function(s) { return s.end >= st.now.mins; });
         if (!info.services.length) continue;
@@ -4632,7 +4633,9 @@ if (window.netlifyIdentity) {
   function reopenText(st, L) {
     var r = st.reopen;
     if (!r) return '';
-    var when = (r.days === 1 ? (L === 'en' ? 'tomorrow (' : 'morgen (') + dayLabel(r.date, L) + ')' : dayLabel(r.date, L));
+    var when = r.days === 0 ? (L === 'en' ? 'today' : 'vandaag')
+             : r.days === 1 ? (L === 'en' ? 'tomorrow (' : 'morgen (') + dayLabel(r.date, L) + ')'
+             : dayLabel(r.date, L);
     return L === 'en'
       ? 'Ordering reopens ' + when + ' from ' + fmtMins(r.time) + '.'
       : 'Bestellen kan terug ' + when + ' vanaf ' + fmtMins(r.time) + '.';
