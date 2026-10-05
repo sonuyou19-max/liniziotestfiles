@@ -1734,7 +1734,7 @@ body.cart-open {
 /* Action buttons */
 .receipt-actions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0.6rem;
   margin-top: 0.8rem;
 }
@@ -2243,6 +2243,16 @@ body.ordering-closed .closed-banner { display: block; }
 }
 
 #modal-call-btn .contact-val { font: inherit; letter-spacing: inherit; white-space: nowrap; }
+
+/* Call button label rolls: "Thuis bestellen?" → "Bel 016 / 20.20.56" (whole button dials) */
+.call-ticker { display: block; height: 1.6em; line-height: 1.6em; overflow: hidden; text-align: center; }
+.call-ticker-track { display: block; animation: order-ticker-roll 8s ease-in-out infinite; }
+.call-ticker-item { display: block; height: 1.6em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#modal-call-btn { min-width: 0; padding-left: 0.3rem; padding-right: 0.3rem; font-size: 0.6rem; letter-spacing: 0.04em; }
+@media (max-width: 360px) { #modal-call-btn { font-size: 0.54rem; letter-spacing: 0.02em; } .call-ticker-ico { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .call-ticker-track { animation: none; transform: translateY(-1.6em); }   /* show "Bel …" */
+}
 
 /* ── ORDER TIMING NOTICE ── */
 .order-timing-notice {
@@ -4360,7 +4370,11 @@ setLang = function(lang) {
         <button id="modal-show-chef-btn" onclick="showChefScreen()">
           🧑‍🍳 <span id="modal-chef-label">Toon aan raam</span>
         </button>
-        <a id="modal-call-btn" href="tel:+3216202056">📞 <span id="modal-call-label">Bel</span> <span class="contact-val">016 / 20.20.56</span></a>
+        <a id="modal-call-btn" href="tel:+3216202056" aria-label="Bel 016 / 20.20.56"><span class="call-ticker"><span class="call-ticker-track">
+          <span class="call-ticker-item"><span class="call-ticker-ico">🏠 </span><span class="call-ticker-q">Thuis bestellen?</span></span>
+          <span class="call-ticker-item"><span class="call-ticker-ico">📞 </span><span class="call-ticker-label">Bel</span> <span class="contact-val">016 / 20.20.56</span></span>
+          <span class="call-ticker-item" aria-hidden="true"><span class="call-ticker-ico">🏠 </span><span class="call-ticker-q">Thuis bestellen?</span></span>
+        </span></span></a>
         <button id="modal-close-btn" onclick="closeOrderModal()" id="modal-close-btn">
           <span id="modal-close-label">Sluiten</span>
         </button>
@@ -4708,7 +4722,12 @@ if (window.netlifyIdentity) {
     show(byId('modal-show-chef-btn'), st.window, 'flex');
     var call = byId('modal-call-btn');
     show(call, st.call && !st.whatsapp, 'flex');
-    var cl = byId('modal-call-label'); if (cl) cl.textContent = L === 'en' ? 'Call' : 'Bel';
+    document.querySelectorAll('.call-ticker-label').forEach(function(e) { e.textContent = L === 'en' ? 'Call' : 'Bel'; });
+    document.querySelectorAll('.call-ticker-q').forEach(function(e) { e.textContent = L === 'en' ? 'Ordering from home?' : 'Thuis bestellen?'; });
+    if (call) {
+      var num = call.querySelector('.contact-val');
+      call.setAttribute('aria-label', (L === 'en' ? 'Call ' : 'Bel ') + (num ? num.textContent : ''));
+    }
     var primary = [byId('modal-call-btn'), byId('modal-whatsapp-btn'), byId('modal-show-chef-btn')]
       .filter(function(b) { return b && b.style.display !== 'none'; });
     primary.forEach(function(b) { b.style.gridColumn = primary.length === 1 ? '1 / -1' : ''; });
