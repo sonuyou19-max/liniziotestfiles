@@ -4723,7 +4723,7 @@ if (window.netlifyIdentity) {
     if (typeof setPickupStep === 'function') setPickupStep(st.whatsapp && !!pickRow && pickRow.classList.contains('show'));
     show(byId('modal-show-chef-btn'), st.window, 'flex');
     var call = byId('modal-call-btn');
-    show(call, st.call && !st.whatsapp, 'flex');
+    show(call, st.call, 'flex');   // phone orders: whole ordering day (09:30–20:45)
     document.querySelectorAll('.call-ticker-label').forEach(function(e) { e.textContent = L === 'en' ? 'Call' : 'Bel'; });
     document.querySelectorAll('.call-ticker-q').forEach(function(e) { e.textContent = L === 'en' ? 'Ordering from home?' : 'Thuis bestellen?'; });
     if (call) {
@@ -4732,7 +4732,8 @@ if (window.netlifyIdentity) {
     }
     var primary = [byId('modal-call-btn'), byId('modal-whatsapp-btn'), byId('modal-show-chef-btn')]
       .filter(function(b) { return b && b.style.display !== 'none'; });
-    primary.forEach(function(b) { b.style.gridColumn = primary.length === 1 ? '1 / -1' : ''; });
+    // one button, or WhatsApp + call → full-width rows; "Toon aan raam" + call → side by side
+    primary.forEach(function(b) { b.style.gridColumn = (primary.length === 1 || st.whatsapp) ? '1 / -1' : ''; });
 
     var hint = byId('modal-order-hint');
     if (hint) {
